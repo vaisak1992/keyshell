@@ -5,7 +5,6 @@ pipeline {
     }
   
     options {
-        retry(2)
         timestamps()
     }
   
