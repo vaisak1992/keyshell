@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Deploy to Apache2') {
             steps {
-                sh 'rsync -avzP dist/keyshell/* /var/www/html/'
+                sh 'cp -rv dist/keyshell/* /var/www/html/'
             }
         }
         stage('Archive Artifacts') {
